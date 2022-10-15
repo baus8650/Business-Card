@@ -11,7 +11,12 @@ import SwiftUI
 struct Business_CardApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("Biography", systemImage: "person.text.rectangle.fill")
+                    }
+            }
         }
     }
 }
