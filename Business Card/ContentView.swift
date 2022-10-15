@@ -4,16 +4,26 @@
 //
 //  Created by Tim Bausch on 10/15/22.
 //
-
+import Combine
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var userViewModel = UserViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(userViewModel.user.name)
+                .font(.title)
+            userViewModel.headshot
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 132)
+                .cornerRadius(16)
+            ScrollView {
+                Text(userViewModel.user.biography.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression)
+                    .replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
+                    )
+            }
         }
         .padding()
     }
