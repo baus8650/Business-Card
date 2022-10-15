@@ -14,6 +14,10 @@
 		222EAB2C28FB4AB800F1B23D /* Business_CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB2B28FB4AB800F1B23D /* Business_CardTests.swift */; };
 		222EAB3628FB4AB800F1B23D /* Business_CardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB3528FB4AB800F1B23D /* Business_CardUITests.swift */; };
 		222EAB3828FB4AB800F1B23D /* Business_CardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB3728FB4AB800F1B23D /* Business_CardUITestsLaunchTests.swift */; };
+		222EAB4628FB4ACC00F1B23D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB4528FB4ACC00F1B23D /* User.swift */; };
+		222EAB4928FB4D4000F1B23D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB4828FB4D4000F1B23D /* Networking.swift */; };
+		222EAB4B28FB522D00F1B23D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB4A28FB522D00F1B23D /* UserViewModel.swift */; };
+		222EAB4E28FB5D5800F1B23D /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB4D28FB5D5800F1B23D /* ProjectList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		222EAB3128FB4AB800F1B23D /* Business CardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Business CardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		222EAB3528FB4AB800F1B23D /* Business_CardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business_CardUITests.swift; sourceTree = "<group>"; };
 		222EAB3728FB4AB800F1B23D /* Business_CardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business_CardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		222EAB4528FB4ACC00F1B23D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		222EAB4828FB4D4000F1B23D /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		222EAB4A28FB522D00F1B23D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		222EAB4D28FB5D5800F1B23D /* ProjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,13 @@
 		222EAB1928FB4AB700F1B23D /* Business Card */ = {
 			isa = PBXGroup;
 			children = (
+				222EAB4728FB4D3900F1B23D /* Services */,
+				222EAB4428FB4ABE00F1B23D /* Models */,
 				222EAB1A28FB4AB700F1B23D /* Business_CardApp.swift */,
 				222EAB1C28FB4AB700F1B23D /* ContentView.swift */,
 				222EAB1E28FB4AB800F1B23D /* Assets.xcassets */,
 				222EAB2028FB4AB800F1B23D /* Preview Content */,
+				222EAB4C28FB523100F1B23D /* View Models */,
 			);
 			path = "Business Card";
 			sourceTree = "<group>";
@@ -125,6 +136,31 @@
 				222EAB3728FB4AB800F1B23D /* Business_CardUITestsLaunchTests.swift */,
 			);
 			path = "Business CardUITests";
+			sourceTree = "<group>";
+		};
+		222EAB4428FB4ABE00F1B23D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				222EAB4528FB4ACC00F1B23D /* User.swift */,
+				222EAB4D28FB5D5800F1B23D /* ProjectList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		222EAB4728FB4D3900F1B23D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				222EAB4828FB4D4000F1B23D /* Networking.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		222EAB4C28FB523100F1B23D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				222EAB4A28FB522D00F1B23D /* UserViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +295,10 @@
 			files = (
 				222EAB1D28FB4AB700F1B23D /* ContentView.swift in Sources */,
 				222EAB1B28FB4AB700F1B23D /* Business_CardApp.swift in Sources */,
+				222EAB4628FB4ACC00F1B23D /* User.swift in Sources */,
+				222EAB4B28FB522D00F1B23D /* UserViewModel.swift in Sources */,
+				222EAB4928FB4D4000F1B23D /* Networking.swift in Sources */,
+				222EAB4E28FB5D5800F1B23D /* ProjectList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
