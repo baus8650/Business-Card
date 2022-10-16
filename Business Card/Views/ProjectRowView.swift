@@ -1,9 +1,3 @@
-//
-//  ProjectRowView.swift
-//  Business Card
-//
-//  Created by Tim Bausch on 10/15/22.
-//
 import SDWebImageSwiftUI
 import SwiftUI
 
@@ -27,6 +21,7 @@ struct ProjectRowView: View {
                     }
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: 72)
+                    .cornerRadius(16)
                 VStack(alignment: .leading) {
                     Text(name)
                         .font(.title2)
@@ -62,17 +57,5 @@ struct ProjectRowView: View {
             return false
         }
     }
-    
-//    func imageStringToImage(imageString: String) {
-//        let imageURL = URL(string: baseURLString+Networking.NetworkRequests.appIcon.rawValue+appIcon)
-//        print("IMAGE URL \(imageURL)")
-//        DispatchQueue.global().async {
-//            let imageData = try? Data(contentsOf: imageURL!)
-//            DispatchQueue.main.async {
-//                print("IMAGE DATA \(imageData)")
-//                self.downloadedAppIcon = UIImage(data: imageData!)!
-//            }
-//        }
-//    }
 }
 
