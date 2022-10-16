@@ -16,6 +16,10 @@ struct Business_CardApp: App {
                     .tabItem {
                         Label("Biography", systemImage: "person.text.rectangle.fill")
                     }
+                ProjectListView()
+                    .tabItem {
+                        Label("Projects", systemImage: "folder.fill")
+                    }
             }
         }
     }

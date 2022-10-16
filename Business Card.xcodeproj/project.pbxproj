@@ -17,6 +17,15 @@
 		222EAB4628FB4ACC00F1B23D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB4528FB4ACC00F1B23D /* User.swift */; };
 		222EAB4928FB4D4000F1B23D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB4828FB4D4000F1B23D /* Networking.swift */; };
 		222EAB4B28FB522D00F1B23D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB4A28FB522D00F1B23D /* UserViewModel.swift */; };
+		223E36F128FB638F00B122C7 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E36F028FB638F00B122C7 /* ProjectListView.swift */; };
+		223E36F328FB639C00B122C7 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E36F228FB639C00B122C7 /* Project.swift */; };
+		223E36F528FB642500B122C7 /* ApplicationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E36F428FB642500B122C7 /* ApplicationType.swift */; };
+		223E36F728FB647200B122C7 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E36F628FB647200B122C7 /* Skill.swift */; };
+		2280752F28FB6AE700832268 /* ScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280752E28FB6AE700832268 /* ScreenShot.swift */; };
+		2280753128FB6B2600832268 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280753028FB6B2600832268 /* Review.swift */; };
+		2280753328FB6DFE00832268 /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280753228FB6DFE00832268 /* ProjectListViewModel.swift */; };
+		2280753528FB73C800832268 /* ProjectRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280753428FB73C800832268 /* ProjectRowView.swift */; };
+		2280753828FB887200832268 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2280753728FB887200832268 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +59,14 @@
 		222EAB4528FB4ACC00F1B23D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		222EAB4828FB4D4000F1B23D /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		222EAB4A28FB522D00F1B23D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		223E36F028FB638F00B122C7 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
+		223E36F228FB639C00B122C7 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		223E36F428FB642500B122C7 /* ApplicationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationType.swift; sourceTree = "<group>"; };
+		223E36F628FB647200B122C7 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		2280752E28FB6AE700832268 /* ScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShot.swift; sourceTree = "<group>"; };
+		2280753028FB6B2600832268 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		2280753228FB6DFE00832268 /* ProjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewModel.swift; sourceTree = "<group>"; };
+		2280753428FB73C800832268 /* ProjectRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2280753828FB887200832268 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,13 +118,13 @@
 		222EAB1928FB4AB700F1B23D /* Business Card */ = {
 			isa = PBXGroup;
 			children = (
+				222EAB4C28FB523100F1B23D /* View Models */,
 				22BAA37028FB61AE00CF8005 /* Views */,
 				222EAB4728FB4D3900F1B23D /* Services */,
 				222EAB4428FB4ABE00F1B23D /* Models */,
 				222EAB1A28FB4AB700F1B23D /* Business_CardApp.swift */,
 				222EAB1E28FB4AB800F1B23D /* Assets.xcassets */,
 				222EAB2028FB4AB800F1B23D /* Preview Content */,
-				222EAB4C28FB523100F1B23D /* View Models */,
 			);
 			path = "Business Card";
 			sourceTree = "<group>";
@@ -140,6 +158,11 @@
 			isa = PBXGroup;
 			children = (
 				222EAB4528FB4ACC00F1B23D /* User.swift */,
+				223E36F228FB639C00B122C7 /* Project.swift */,
+				223E36F428FB642500B122C7 /* ApplicationType.swift */,
+				223E36F628FB647200B122C7 /* Skill.swift */,
+				2280752E28FB6AE700832268 /* ScreenShot.swift */,
+				2280753028FB6B2600832268 /* Review.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				222EAB4A28FB522D00F1B23D /* UserViewModel.swift */,
+				2280753228FB6DFE00832268 /* ProjectListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -164,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				222EAB1C28FB4AB700F1B23D /* ContentView.swift */,
+				223E36F028FB638F00B122C7 /* ProjectListView.swift */,
+				2280753428FB73C800832268 /* ProjectRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +210,9 @@
 			dependencies = (
 			);
 			name = "Business Card";
+			packageProductDependencies = (
+				2280753728FB887200832268 /* SDWebImageSwiftUI */,
+			);
 			productName = "Business Card";
 			productReference = 222EAB1728FB4AB700F1B23D /* Business Card.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +285,9 @@
 				Base,
 			);
 			mainGroup = 222EAB0E28FB4AB700F1B23D;
+			packageReferences = (
+				2280753628FB887200832268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 222EAB1828FB4AB700F1B23D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,10 +331,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				222EAB1D28FB4AB700F1B23D /* ContentView.swift in Sources */,
+				2280752F28FB6AE700832268 /* ScreenShot.swift in Sources */,
 				222EAB1B28FB4AB700F1B23D /* Business_CardApp.swift in Sources */,
 				222EAB4628FB4ACC00F1B23D /* User.swift in Sources */,
+				2280753328FB6DFE00832268 /* ProjectListViewModel.swift in Sources */,
+				2280753528FB73C800832268 /* ProjectRowView.swift in Sources */,
+				223E36F728FB647200B122C7 /* Skill.swift in Sources */,
 				222EAB4B28FB522D00F1B23D /* UserViewModel.swift in Sources */,
+				2280753128FB6B2600832268 /* Review.swift in Sources */,
 				222EAB4928FB4D4000F1B23D /* Networking.swift in Sources */,
+				223E36F328FB639C00B122C7 /* Project.swift in Sources */,
+				223E36F528FB642500B122C7 /* ApplicationType.swift in Sources */,
+				223E36F128FB638F00B122C7 /* ProjectListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +667,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2280753628FB887200832268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2280753728FB887200832268 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2280753628FB887200832268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 222EAB0F28FB4AB700F1B23D /* Project object */;
 }
