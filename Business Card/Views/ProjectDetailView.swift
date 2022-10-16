@@ -59,12 +59,6 @@ struct ProjectDetailView: View {
                         HStack(alignment: .top) {
                             ForEach(projectViewModel.screenshots) { screenshot in
                                 ScreenShotView(id: screenshot.id.uuidString, image: screenshot.image, description: screenshot.description, baseURLString: baseURLString)
-                                //                                .overlay(
-                                //                                    RoundedRectangle(cornerRadius: 16)
-                                //                                        .stroke(.purple, lineWidth: 2.5)
-                                //                                )
-                                //                                .padding([.top, .bottom])
-                                //                                .padding([.leading, .trailing], 8)
                             }
                         }
                     }
@@ -77,12 +71,6 @@ struct ProjectDetailView: View {
                         .fontWeight(.bold)
                     ForEach(projectViewModel.reviews) { review in
                         ReviewView(title: review.reviewTitle, rating: review.ratingValue, comment: review.ratingComment)
-                        //                            .overlay(
-                        //                                RoundedRectangle(cornerRadius: 16)
-                        //                                    .stroke(.purple, lineWidth: 2.5)
-                        //                            )
-                        //                            .padding()
-                        
                     }
                 }
             }

@@ -14,8 +14,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-//                Text(userViewModel.user.name)
-//                    .font(.title)
                 WebImage(url: URL(string: userViewModel.baseURLString+Networking.NetworkRequests.headShot.rawValue+userViewModel.user.headshot))
                     .resizable()
                     .placeholder {

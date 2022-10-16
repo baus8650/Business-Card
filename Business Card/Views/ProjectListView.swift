@@ -24,7 +24,6 @@ struct ProjectListView: View {
             }
             .navigationTitle("Projects")
             .navigationBarTitleDisplayMode(.large)
-//            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
