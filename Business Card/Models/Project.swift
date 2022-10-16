@@ -12,18 +12,3 @@ struct Project: Codable, Identifiable {
     let appIcon: String?
     let applicationType: ApplicationType
 }
-
-struct ProjectFormatted: Identifiable {
-    let id: String
-    let name: String
-    let yearCompleted: Int
-    let shortDescription: String
-    let longDescription: String
-    let repoLink: String?
-    let appIcon: UIImage
-    let applicationType: ApplicationType
-}
-
-struct Projects: Codable {
-    let projects: [Project]
-}

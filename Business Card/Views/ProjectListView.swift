@@ -15,7 +15,7 @@ struct ProjectListView: View {
             List {
                 ForEach(projectListViewModel.projects) {project in
                     NavigationLink {
-                        
+                        ProjectDetailView(project: project)
                     } label: {
                         ProjectRowView(appIcon: project.appIcon!, name: project.name, yearCompleted: project.yearCompleted, shortDescription: project.shortDescription, applicationType: project.applicationType, baseURLString: projectListViewModel.baseURLString)
                     }
@@ -23,6 +23,7 @@ struct ProjectListView: View {
 
             }
             .navigationTitle("Projects")
+            .navigationBarTitleDisplayMode(.large)
         }
     }
 }

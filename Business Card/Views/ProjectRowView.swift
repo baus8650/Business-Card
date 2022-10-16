@@ -8,8 +8,6 @@ struct ProjectRowView: View {
     var shortDescription: String
     var applicationType: ApplicationType
     var baseURLString: String
-
-    @State var appImage: UIImage = UIImage(systemName: "iphone")!
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -36,17 +34,6 @@ struct ProjectRowView: View {
             Text(shortDescription.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression))
             
         }
-    }
-    
-    func fetchImage(baseURLString: String, appIconString: String) {
-        let imageURL = URL(string: baseURLString+Networking.NetworkRequests.appIcon.rawValue+appIconString)!
-        let dataTask = URLSession.shared.dataTask(with: imageURL) { data, _, _ in
-            if let data = data {
-                DispatchQueue.main.async {
-                    self.appImage = UIImage(data: data)!
-                }
-            }
-        }.resume()
     }
     
     func isiOSApp(type: UUID) -> Bool {
