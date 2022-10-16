@@ -43,7 +43,6 @@ struct ProjectRowView: View {
         let dataTask = URLSession.shared.dataTask(with: imageURL) { data, _, _ in
             if let data = data {
                 DispatchQueue.main.async {
-                    print("I SHOULD HAVE GOTTEN THE IMAGE#")
                     self.appImage = UIImage(data: data)!
                 }
             }
