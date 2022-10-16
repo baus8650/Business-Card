@@ -26,6 +26,10 @@
 		2280753328FB6DFE00832268 /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280753228FB6DFE00832268 /* ProjectListViewModel.swift */; };
 		2280753528FB73C800832268 /* ProjectRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280753428FB73C800832268 /* ProjectRowView.swift */; };
 		2280753828FB887200832268 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2280753728FB887200832268 /* SDWebImageSwiftUI */; };
+		2280753A28FBB11900832268 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280753928FBB11900832268 /* ProjectDetailView.swift */; };
+		2280753C28FBB19200832268 /* ProjectDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280753B28FBB19200832268 /* ProjectDetailViewModel.swift */; };
+		2280753E28FBC1CB00832268 /* ScreenShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280753D28FBC1CB00832268 /* ScreenShotView.swift */; };
+		2280754028FBC92900832268 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280753F28FBC92900832268 /* ReviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		2280753028FB6B2600832268 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		2280753228FB6DFE00832268 /* ProjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewModel.swift; sourceTree = "<group>"; };
 		2280753428FB73C800832268 /* ProjectRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRowView.swift; sourceTree = "<group>"; };
+		2280753928FBB11900832268 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		2280753B28FBB19200832268 /* ProjectDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewModel.swift; sourceTree = "<group>"; };
+		2280753D28FBC1CB00832268 /* ScreenShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotView.swift; sourceTree = "<group>"; };
+		2280753F28FBC92900832268 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +188,7 @@
 			children = (
 				222EAB4A28FB522D00F1B23D /* UserViewModel.swift */,
 				2280753228FB6DFE00832268 /* ProjectListViewModel.swift */,
+				2280753B28FBB19200832268 /* ProjectDetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -190,6 +199,9 @@
 				222EAB1C28FB4AB700F1B23D /* ContentView.swift */,
 				223E36F028FB638F00B122C7 /* ProjectListView.swift */,
 				2280753428FB73C800832268 /* ProjectRowView.swift */,
+				2280753928FBB11900832268 /* ProjectDetailView.swift */,
+				2280753D28FBC1CB00832268 /* ScreenShotView.swift */,
+				2280753F28FBC92900832268 /* ReviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,15 +346,19 @@
 				2280752F28FB6AE700832268 /* ScreenShot.swift in Sources */,
 				222EAB1B28FB4AB700F1B23D /* Business_CardApp.swift in Sources */,
 				222EAB4628FB4ACC00F1B23D /* User.swift in Sources */,
+				2280753C28FBB19200832268 /* ProjectDetailViewModel.swift in Sources */,
 				2280753328FB6DFE00832268 /* ProjectListViewModel.swift in Sources */,
 				2280753528FB73C800832268 /* ProjectRowView.swift in Sources */,
 				223E36F728FB647200B122C7 /* Skill.swift in Sources */,
+				2280753E28FBC1CB00832268 /* ScreenShotView.swift in Sources */,
 				222EAB4B28FB522D00F1B23D /* UserViewModel.swift in Sources */,
 				2280753128FB6B2600832268 /* Review.swift in Sources */,
 				222EAB4928FB4D4000F1B23D /* Networking.swift in Sources */,
 				223E36F328FB639C00B122C7 /* Project.swift in Sources */,
 				223E36F528FB642500B122C7 /* ApplicationType.swift in Sources */,
+				2280754028FBC92900832268 /* ReviewView.swift in Sources */,
 				223E36F128FB638F00B122C7 /* ProjectListView.swift in Sources */,
+				2280753A28FBB11900832268 /* ProjectDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
