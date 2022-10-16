@@ -1,6 +1,6 @@
 import Foundation
 
-struct Review: Codable {
+struct Review: Codable, Identifiable {
     let id: UUID
     let ratingValue: Int
     let reviewTitle: String
